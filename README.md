@@ -1,6 +1,13 @@
 # Text Generation
 
 
+
+#### Data
+- [Recipes](http://www.ffts.com/recipes.htm)
+- Marvel Movie Subs
+- Poems
+- Iliad Odyssey
+
 #### References
 - [Deep Learning for Speech and Language](https://telecombcn-dl.github.io/2017-dlsl/)
 - [Understanding LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
