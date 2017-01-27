@@ -16,7 +16,7 @@ import sys
 
 VERSION = sys.argv[1]
 path = sys.argv[2]
-DATASET = path.split('/')[1]
+DATASET = path.split('/')[2]
 text = open(path).read().lower()
 
 print('corpus length:', len(text))
