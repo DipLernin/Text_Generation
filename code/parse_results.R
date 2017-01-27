@@ -36,32 +36,25 @@ res_marvel <- parse_output("../datasets/marvel_default.txt")
 
 
 # training plot
-jpeg(file = "../plots/train_plot.jpg")
+jpeg(file = "../plots/iter_loss_plot.jpg")
 
-plot(res_poetry$acc, res_poetry$loss, xlab = "Accuracy", ylab = "Loss", 
-     main = "Train Loss vs Accuracy", pch = 20, col = "red")
-lines(res_poetry$acc, res_poetry$loss, col = "red")
+plot(res_poetry$Iteration, res_poetry$loss, xlab = "Accuracy", ylab = "Loss", 
+     main = "Iteration vs Loss", pch = 20, col = "red")
+lines(res_poetry$Iteration, res_poetry$loss, col = "red")
 
-points(res_marvel$acc, res_marvel$loss, pch = 20, col = "blue")
-lines(res_marvel$acc, res_marvel$loss, col = "blue")
+points(res_poetry$Iteration, res_poetry$val_loss, xlab = "Epoch", ylab = "Loss", 
+     main = "Validation Epochs vs Loss", pch = 20, col = "pink")
+lines(res_poetry$Iteration, res_poetry$val_loss, col = "pink")
+
+points(res_marvel$Iteration, res_marvel$loss, pch = 20, col = "blue")
+lines(res_marvel$Iteration, res_marvel$loss, col = "blue")
+
+points(res_marvel$Iteration, res_marvel$val_loss, pch = 20, col = "turquoise")
+lines(res_marvel$Iteration, res_marvel$val_loss, col = "turquoise")
 
 legend("topright", title="Data", 
-       c("Poetry","Marvel movies"), fill=c("red", "blue"))
+       c("Poetry train", "Poetry test","Marvel train", "Marvel test"), 
+       fill=c("red", "pink", "blue", "turquoise"))
 
 dev.off()
 
-# validation plot
-
-jpeg(file = "../plots/valid_plot.jpg")
-
-plot(res_poetry$val_acc, res_poetry$val_loss, xlab = "Accuracy", ylab = "Loss", 
-     main = "Validation Loss vs Accuracy", pch = 20, col = "green")
-lines(res_poetry$val_acc, res_poetry$val_loss, col = "green")
-
-points(res_marvel$val_acc, res_marvel$val_loss, pch = 20, col = "purple")
-lines(res_marvel$val_acc, res_marvel$val_loss, col = "purple")
-
-legend("topright", title="Data",
-       c("Poetry","Marvel movies"), fill=c("green", "purple"))
-
-dev.off()
