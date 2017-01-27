@@ -8,6 +8,7 @@ model.add(LSTM(128, input_shape=(maxlen, len(chars))))
 model.add(Dense(len(chars)))
 model.add(Activation('softmax'))
 ```
+![Architecture](https://pp.vk.me/c638224/v638224173/2159e/NnNpc6qyF8c.jpg "Architecture")
 
 #### Data
 - [Recipes](http://www.ffts.com/recipes.htm)
