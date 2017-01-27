@@ -11,10 +11,11 @@ model.add(Activation('softmax'))
 ![Architecture](https://pp.vk.me/c638224/v638224173/215ac/Dav5JGiBfUo.jpg "Architecture")
 
 #### Data
-- [Recipes](http://www.ffts.com/recipes.htm)
-- Marvel Movie Subs
-- Poems
-- Iliad Odyssey
+- [Recipes](http://www.ffts.com/recipes.htm) 11 MB (compressed)
+- Marvel Movie Subs 0.408 MB
+- Poems 0.926 MB
+- Iliad Odyssey 1.4 MB
+- Darwin 1.3 MB
 
 #### References
 - [Deep Learning for Speech and Language](https://telecombcn-dl.github.io/2017-dlsl/)
