@@ -14,8 +14,8 @@ model.add(Activation('softmax'))
 - [Recipes](http://www.ffts.com/recipes.htm) 11 MB (compressed)
 - Marvel Movie Subs 0.408 MB
 - Poems 0.926 MB
-- Iliad Odyssey 1.4 MB
-- Darwin 1.3 MB
+- [Iliad](http://classics.mit.edu/Homer/iliad.mb.txt), [Odyssey](http://classics.mit.edu/Homer/odyssey.mb.txt) 1.4 MB
+- [Darwin](https://archive.org/stream/originofspecies00darwuoft/originofspecies00darwuoft_djvu.txt) 1.3 MB
 
 #### References
 - [Deep Learning for Speech and Language](https://telecombcn-dl.github.io/2017-dlsl/)
