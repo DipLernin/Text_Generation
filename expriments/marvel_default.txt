@@ -1,0 +1,125 @@
+Train on 252760 samples, validate on 63190 samples
+Epoch 1/1
+252760/252760 [==============================] - 141s - loss: 1.8362 - acc: 0.4532 - val_loss: 1.8430 - val_acc: 0.4517
+Iteration 315949
+Train on 252760 samples, validate on 63190 samples
+Epoch 1/1
+252760/252760 [==============================] - 141s - loss: 1.8247 - acc: 0.4558 - val_loss: 1.8388 - val_acc: 0.4528
+Iteration 315949
+Train on 252760 samples, validate on 63190 samples
+Epoch 1/1
+252760/252760 [==============================] - 141s - loss: 1.8141 - acc: 0.4588 - val_loss: 1.8279 - val_acc: 0.4557
+Iteration 315949
+Train on 252760 samples, validate on 63190 samples
+Epoch 1/1
+252760/252760 [==============================] - 141s - loss: 1.8035 - acc: 0.4613 - val_loss: 1.8174 - val_acc: 0.4596
+Iteration 315949
+Train on 252760 samples, validate on 63190 samples
+Epoch 1/1
+252760/252760 [==============================] - 141s - loss: 1.7939 - acc: 0.4634 - val_loss: 1.8111 - val_acc: 0.4578
+Iteration 315949
+Train on 252760 samples, validate on 63190 samples
+Epoch 1/1
+252760/252760 [==============================] - 141s - loss: 1.7848 - acc: 0.4661 - val_loss: 1.8041 - val_acc: 0.4617
+Iteration 315949
+Train on 252760 samples, validate on 63190 samples
+Epoch 1/1
+120192/252760 [=============>................] - ETA: 68s - loss: 1.7741 - acc: 0.4696ubuntu@ip-172-31-39-122:~/Text_Generation/code$ ^C
+ubuntu@ip-172-31-39-122:~/Text_Generation/code$ screen -r 'poems'
+There is no screen to be resumed matching poems.
+ubuntu@ip-172-31-39-122:~/Text_Generation/code$ screen -ls
+There are screens on:
+	14682.poem	(01/27/2017 02:44:16 PM)	(Detached)
+	13276.poms	(01/27/2017 02:16:59 PM)	(Detached)
+2 Sockets in /var/run/screen/S-ubuntu.
+ubuntu@ip-172-31-39-122:~/Text_Generation/code$ screen -r 14682.poem
+[detached from 14682.poem]
+ubuntu@ip-172-31-39-122:~/Text_Generation/code$ screen -r 13276.poms
+[detached from 13276.poms]
+ubuntu@ip-172-31-39-122:~/Text_Generation/code$ ls
+code_poems.py  code_subs.py  log_poems.txt  log_subs.txt  lstm_text_generation.py
+ubuntu@ip-172-31-39-122:~/Text_Generation/code$ tail -f log_subs.txt
+^C
+ubuntu@ip-172-31-39-122:~/Text_Generation/code$ tail -f log_subs.txt
+Build model...
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 63s - loss: 2.9222 - acc: 0.2113 - val_loss: 2.7680 - val_acc: 0.2653
+Iteration 1
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 62s - loss: 2.5694 - acc: 0.2995 - val_loss: 2.5048 - val_acc: 0.3221
+Iteration 2
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 2.4100 - acc: 0.3313 - val_loss: 2.4237 - val_acc: 0.3371
+Iteration 3
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 2.3251 - acc: 0.3483 - val_loss: 2.3289 - val_acc: 0.3566
+Iteration 4
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 60s - loss: 2.2666 - acc: 0.3595 - val_loss: 2.2766 - val_acc: 0.3687
+Iteration 5
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 2.2202 - acc: 0.3683 - val_loss: 2.2345 - val_acc: 0.3753
+Iteration 6
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 2.1813 - acc: 0.3748 - val_loss: 2.2105 - val_acc: 0.3743
+Iteration 7
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 2.1479 - acc: 0.3805 - val_loss: 2.1903 - val_acc: 0.3824
+Iteration 8
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 2.1189 - acc: 0.3873 - val_loss: 2.1509 - val_acc: 0.3854
+Iteration 9
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 2.0931 - acc: 0.3938 - val_loss: 2.1336 - val_acc: 0.3897
+Iteration 10
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 2.0700 - acc: 0.3990 - val_loss: 2.1192 - val_acc: 0.3963
+Iteration 11
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 2.0481 - acc: 0.4049 - val_loss: 2.0939 - val_acc: 0.4011
+Iteration 12
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 2.0287 - acc: 0.4105 - val_loss: 2.0857 - val_acc: 0.4036
+Iteration 13
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 60s - loss: 2.0105 - acc: 0.4161 - val_loss: 2.0720 - val_acc: 0.4068
+Iteration 14
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 60s - loss: 1.9933 - acc: 0.4220 - val_loss: 2.0544 - val_acc: 0.4138
+Iteration 15
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 1.9771 - acc: 0.4261 - val_loss: 2.0532 - val_acc: 0.4142
+Iteration 16
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 1.9618 - acc: 0.4308 - val_loss: 2.0376 - val_acc: 0.4195
+Iteration 17
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 60s - loss: 1.9475 - acc: 0.4350 - val_loss: 2.0272 - val_acc: 0.4213
+Iteration 18
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 1.9341 - acc: 0.4384 - val_loss: 2.0131 - val_acc: 0.4243
+Iteration 19
+Train on 111507 samples, validate on 27877 samples
+Epoch 1/1
+111507/111507 [==============================] - 61s - loss: 1.9210 - acc: 0.4415 - val_loss: 2.0045 - val_acc: 0.4239
+Iteration 20
+Train on 111507 samples, validate on 27877 samples
