@@ -63,4 +63,4 @@ for iteration in range(1, 30):
         if best_validation > hist.history['val_loss'][0]:
             best_validation = hist.history['val_loss'][0]
             print('Best model so far. Saving...')
-            model.save('trained_models/' + DATASET + '_' + VERSION + '.h5')
+            model.save('../trained_models/' + DATASET + '_' + VERSION + '.h5')
