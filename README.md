@@ -1,6 +1,13 @@
 # Text Generation
 
+#### Architecture
 
+```
+model = Sequential()
+model.add(LSTM(128, input_shape=(maxlen, len(chars))))
+model.add(Dense(len(chars)))
+model.add(Activation('softmax'))
+```
 
 #### Data
 - [Recipes](http://www.ffts.com/recipes.htm)
