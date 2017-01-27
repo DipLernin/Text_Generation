@@ -11,7 +11,7 @@ model.add(Activation('softmax'))
 ![Architecture](https://pp.vk.me/c638224/v638224173/215b3/5CqdJl1AhWk.jpg "Architecture")
 
 #### Data
-- [Recipes](http://www.ffts.com/recipes.htm) 11 MB (compressed)
+- [Recipes](http://www.ffts.com/recipes.htm) 38 MB
 - Marvel Movie Subs 0.408 MB
 - Poems 0.926 MB
 - [Iliad](http://classics.mit.edu/Homer/iliad.mb.txt), [Odyssey](http://classics.mit.edu/Homer/odyssey.mb.txt) 1.4 MB
