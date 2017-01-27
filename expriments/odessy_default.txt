@@ -1,0 +1,105 @@
+Build model...
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 281s - loss: 2.5143 - acc: 0.3030 - val_loss: 2.2242 - val_acc: 0.3605
+Iteration 1
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 209s - loss: 2.1491 - acc: 0.3900 - val_loss: 2.0788 - val_acc: 0.3985
+Iteration 2
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 209s - loss: 2.0304 - acc: 0.4149 - val_loss: 2.0029 - val_acc: 0.4193
+Iteration 3
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 209s - loss: 1.9537 - acc: 0.4331 - val_loss: 1.9266 - val_acc: 0.4354
+Iteration 4
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 210s - loss: 1.8959 - acc: 0.4466 - val_loss: 1.8725 - val_acc: 0.4521
+Iteration 5
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 210s - loss: 1.8483 - acc: 0.4575 - val_loss: 1.8271 - val_acc: 0.4591
+Iteration 6
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 210s - loss: 1.8079 - acc: 0.4677 - val_loss: 1.7894 - val_acc: 0.4726
+Iteration 7
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 210s - loss: 1.7729 - acc: 0.4767 - val_loss: 1.7632 - val_acc: 0.4768
+Iteration 8
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 210s - loss: 1.7420 - acc: 0.4851 - val_loss: 1.7424 - val_acc: 0.4812
+Iteration 9
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 211s - loss: 1.7142 - acc: 0.4924 - val_loss: 1.7064 - val_acc: 0.4960
+Iteration 10
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 210s - loss: 1.6887 - acc: 0.4992 - val_loss: 1.6887 - val_acc: 0.4981
+Iteration 11
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 209s - loss: 1.6658 - acc: 0.5057 - val_loss: 1.6676 - val_acc: 0.5042
+Iteration 12
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 210s - loss: 1.6444 - acc: 0.5116 - val_loss: 1.6493 - val_acc: 0.5102
+Iteration 13
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 211s - loss: 1.6251 - acc: 0.5166 - val_loss: 1.6296 - val_acc: 0.5167
+Iteration 14
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 213s - loss: 1.6069 - acc: 0.5216 - val_loss: 1.6174 - val_acc: 0.5182
+Iteration 15
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 210s - loss: 1.5904 - acc: 0.5259 - val_loss: 1.5989 - val_acc: 0.5249
+Iteration 16
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 210s - loss: 1.5748 - acc: 0.5294 - val_loss: 1.5868 - val_acc: 0.5279
+Iteration 17
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 210s - loss: 1.5601 - acc: 0.5338 - val_loss: 1.5797 - val_acc: 0.5297
+Iteration 18
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 210s - loss: 1.5466 - acc: 0.5375 - val_loss: 1.5602 - val_acc: 0.5353
+Iteration 19
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 209s - loss: 1.5339 - acc: 0.5407 - val_loss: 1.5590 - val_acc: 0.5360
+Iteration 20
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 211s - loss: 1.5218 - acc: 0.5434 - val_loss: 1.5519 - val_acc: 0.5365
+Iteration 21
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 212s - loss: 1.5103 - acc: 0.5470 - val_loss: 1.5321 - val_acc: 0.5432
+Iteration 22
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 212s - loss: 1.4995 - acc: 0.5498 - val_loss: 1.5344 - val_acc: 0.5419
+Iteration 23
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 211s - loss: 1.4893 - acc: 0.5527 - val_loss: 1.5213 - val_acc: 0.5457
+Iteration 24
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 211s - loss: 1.4798 - acc: 0.5554 - val_loss: 1.5160 - val_acc: 0.5466
+Iteration 25
+Train on 379922 samples, validate on 94981 samples
+Epoch 1/1
+379922/379922 [==============================] - 211s - loss: 1.4705 - acc: 0.5578 - val_loss: 1.5075 - val_acc: 0.5502
+Iteration 26
