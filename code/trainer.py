@@ -15,7 +15,7 @@ import importlib
 VERSION = sys.argv[1]
 path = sys.argv[2]
 DATASET = path.split('/')[2]
-text = open(path).read().lower()
+text = open(path, encoding = "ISO-8859-1").read().lower()
 
 print('corpus length:', len(text))
 
