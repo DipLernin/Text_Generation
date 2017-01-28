@@ -4,5 +4,5 @@ VERSION_NAME='v1'
 
 for entry in $DATASETS_FOLDER/*.txt; do
     echo 'Dataset: '$entry
-    python ../code/trainer.py $VERSION_NAME $entry
+    python3 ../code/trainer.py $VERSION_NAME $entry
 done

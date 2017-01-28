@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 '''Run this to train the models
 '''
@@ -58,6 +58,7 @@ model.compile(loss='categorical_crossentropy', optimizer=optimizer,  metrics=['a
 
 best_validation = float("inf")
 for iteration in range(1, 30):
+        print('Iteration Number', iteration)
         hist = model.fit(X, y, batch_size=128, nb_epoch=1, validation_split=0.2)
         print(hist.history)
         if best_validation > hist.history['val_loss'][0]:
