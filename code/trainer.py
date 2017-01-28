@@ -4,15 +4,13 @@
 '''
 
 from __future__ import print_function
-from keras.models import Sequential
-from keras.layers import Dense, Activation
-from keras.layers import LSTM
-from keras.optimizers import RMSprop
 from keras.utils.data_utils import get_file
 from keras.callbacks import ModelCheckpoint
 import numpy as np
 import random
 import sys
+import importlib
+
 
 VERSION = sys.argv[1]
 path = sys.argv[2]
@@ -46,15 +44,10 @@ for i, sentence in enumerate(sentences):
     y[i, char_indices[next_chars[i]]] = 1
 
 
-# build the model: a single LSTM
 print('Build model...')
-model = Sequential()
-model.add(LSTM(128, input_shape=(maxlen, len(chars))))
-model.add(Dense(len(chars)))
-model.add(Activation('softmax'))
-
-optimizer = RMSprop(lr=0.01)
-model.compile(loss='categorical_crossentropy', optimizer=optimizer,  metrics=['accuracy'])
+module = importlib.import_module(('.'.join(sys.argv[3].split('/'))))
+get_model = getattr(module, 'get_model')
+model = get_model(maxlen, len(chars))
 
 best_validation = float("inf")
 for iteration in range(1, 30):
