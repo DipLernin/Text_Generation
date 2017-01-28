@@ -6,9 +6,13 @@ import sys
 MODELS_FOLDER = 'trained_models'
 DATASETS_FOLDER = 'datasets'
 
+print('Loading models...')
 model_files = glob.glob(MODELS_FOLDER + '/*.h5')
 model_names = ['.'.join(f.split('/')[-1].split('.')[:-1]) for f in model_files]
 models = dict([(n,load_model(f)) for n,f in zip(model_names,model_files)])
+
+print('Available models:')
+print(model_names)
 
 paths = [DATASETS_FOLDER+'/'+f.split('/')[-1].split('.')[0]+'.txt' for f in model_files]
 texts = [open(path).read().lower() for path in paths]
@@ -29,7 +33,7 @@ def sample(preds, temperature=1.0):
     return np.argmax(probas)
 
 def predict(model_name, warming_text, count_char='', number=10, temperature=1.0):
-    max_char_generated = 1000 # To avoid infinite loops
+    max_char_generated = 1000
     if model_name not in models:
         raise KeyError('Model not found')
     if len(warming_text) < maxlen:
@@ -55,14 +59,15 @@ def predict(model_name, warming_text, count_char='', number=10, temperature=1.0)
         sentence = sentence[1:] + next_char
         #sys.stdout.write(next_char)
         #sys.stdout.flush()
-    print()
     #print(generated)
     return generated
 
 # Example to generate 50 words
-r1 = predict('marvel_movies_subs.txt_v1', 'roses are red violets are blue', count_char=' ', number=50, temperature=0.2)
-r2 = predict('marvel_movies_subs.txt_v1', 'roses are red violets are blue', count_char=' ', number=50, temperature=1)
-r3 = predict('dummy.txt_v1', 'roses are red violets are blue', count_char=' ', number=50, temperature=0.2)
-r4 = predict('poems.txt_v1', 'roses are red violets are blue', count_char='\n', number=50, temperature=0.5)
-r5 = predict('darwin_origin_of_species.txt_v1', 'roses are red violets are blue', count_char='\n', number=50, temperature=0.5)
-r6 = predict('Homer_odyssey_Iliad.txt_v1', 'roses are red violets are blue', count_char='\n', number=50, temperature=0.5)
+# r1 = predict('marvel_movies_subs.txt_v1', 'roses are red violets are blue', count_char=' ', number=50, temperature=0.2)
+# r2 = predict('marvel_movies_subs.txt_v1', 'roses are red violets are blue', count_char=' ', number=50, temperature=1)
+# r3 = predict('dummy.txt_v2', 'roses are red violets are blue', count_char=' ', number=50, temperature=0.2)
+# r4 = predict('poems.txt_v1', 'roses are red violets are blue', count_char='\n', number=50, temperature=0.5)
+# r5 = predict('darwin_origin_of_species.txt_v1', 'roses are red violets are blue', count_char='\n', number=50, temperature=0.5)
+# r6 = predict('Homer_odyssey_Iliad.txt_v1', 'roses are red violets are blue', count_char='\n', number=50, temperature=0.5)
+#
+# r3 = predict('dummy.txt_v2', 'roses are red violets are blue', count_char=' ', number=50, temperature=0.5)
