@@ -1,5 +1,7 @@
 # Text Generation
 
+![Whatitdoes](https://pp.vk.me/c638224/v638224173/216b1/BBVlgDc2FT4.jpg "Whatitdoes")
+
 #### Architecture
 
 ```
@@ -9,8 +11,6 @@ model.add(Dense(len(chars)))
 model.add(Activation('softmax'))
 ```
 ![Architecture](https://pp.vk.me/c638224/v638224173/215b3/5CqdJl1AhWk.jpg "Architecture")
-
-![Whatitdoes](https://pp.vk.me/c638224/v638224173/216b1/BBVlgDc2FT4.jpg "Whatitdoes")
 
 #### Data
 - [Recipes](http://www.ffts.com/recipes.htm) 38 MB
