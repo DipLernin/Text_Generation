@@ -13,9 +13,9 @@ models = dict([(n,load_model(f)) for n,f in zip(model_names,model_files)])
 paths = [DATASETS_FOLDER+'/'+f.split('/')[-1].split('.')[0]+'.txt' for f in model_files]
 texts = [open(path).read().lower() for path in paths]
 charss = [sorted(list(set(text))) for text in texts]
-chars = dict(zip(model_names, charss))
 char_indices = dict([(n,dict((c, i) for i, c in enumerate(chars))) for n,chars in zip(model_names, charss)])
 indices_char = dict([(n,dict((i, c) for i, c in enumerate(chars))) for n,chars in zip(model_names,charss)])
+chars = dict(zip(model_names, charss))
 
 maxlen = 40
 
@@ -60,4 +60,9 @@ def predict(model_name, warming_text, count_char='', number=10, temperature=1.0)
     return generated
 
 # Example to generate 50 words
-# predict('dummy.txt_v1', 'roses are red violets are blue', count_char=' ', number=50, temperature=0.2)
+r1 = predict('marvel_movies_subs.txt_v1', 'roses are red violets are blue', count_char=' ', number=50, temperature=0.2)
+r2 = predict('marvel_movies_subs.txt_v1', 'roses are red violets are blue', count_char=' ', number=50, temperature=1)
+r3 = predict('dummy.txt_v1', 'roses are red violets are blue', count_char=' ', number=50, temperature=0.2)
+r4 = predict('poems.txt_v1', 'roses are red violets are blue', count_char='\n', number=50, temperature=0.5)
+r5 = predict('darwin_origin_of_species.txt_v1', 'roses are red violets are blue', count_char='\n', number=50, temperature=0.5)
+r6 = predict('Homer_odyssey_Iliad.txt_v1', 'roses are red violets are blue', count_char='\n', number=50, temperature=0.5)
