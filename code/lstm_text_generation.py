@@ -50,13 +50,21 @@ for i, sentence in enumerate(sentences):
 
 # build the model: a single LSTM
 print('Build model...')
+# A sequential model is a linear stack of layers (source: https://keras.io/getting-started/sequential-model-guide/)
 model = Sequential()
+# Single layer LSTM of 128 neurons (more information: https://keras.io/layers/recurrent/#lstm)
+# Input defined as a sequence formed by 40 one-hot encoding characters (40 vectors of dimensions 59)
 model.add(LSTM(128, input_shape=(maxlen, len(chars))))
+# Dense is a fully-connected layer of neurons with 59 (chars' length) neurons (Perceptron)
 model.add(Dense(len(chars)))
+# Softmax: the output of the Perceptron is converted into probabilities. For each character, it is predicted the
+# probability of being the next.
 model.add(Activation('softmax'))
-
+# The optimizer chosen by this model is RMSprop (source: # The optimizer chosen by this model is RMSprop
+# (source: https://keras.io/optimizers/#rmsprop)
 optimizer = RMSprop(lr=0.01)
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
+# More detailed information about sampling (source: https://github.com/karpathy/char-rnn#sampling)
 
 
 def sample(preds, temperature=1.0):
