@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Smart Text</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <link href="http://v4-alpha.getbootstrap.com/examples/narrow-jumbotron/narrow-jumbotron.css" rel="stylesheet">
+	<script src="static/js/submit.js"></script>
+</head>
+<body>
+
+	<p>
+	</p>
+	<div class="container">
+		<div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://diplernin.github.io/">About</a>
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Smart Text Demo</h3>
+      </div>
+
+      	<form>
+      		<div class="form-group row">
+      			<div class='col-md-4'>
+            <select class="custom-select col-md-4" id="model">
+              <option selected value="poems.txt_gru_v1">Poems</option>
+              <option value="Recipies" value="recipies.txt_v1">Recipies</option>
+              <option value="Illiad" value="Homer_odyssey_Iliad.txt_v1">Illiad</option>
+              <option value="Darwin" value="darwin_origin_of_species.txt_v1">Darwin</option>
+            </select>
+      			</div>
+
+      		<div class='col-md-4'>
+
+
+     			</div>
+
+      			<div class='col-md-4'>
+              <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                <button type="button" class="btn btn-success" id="btnsubmit">Submit</button>
+                </div>
+            </div>
+      			</div>
+
+      		</div>
+
+
+      <strong>Output:</strong>
+	  	<div class="jumbotron">
+
+        <span id="output">Please click on the Submit Button</span>
+		</div>
+
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Advanced Options
+  </a>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-block">
+      <div class='col-md-12'>
+              <div class="row">
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Warm" id="warm"/>
+                </div>
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Char Count" id="char"/>
+                </div>
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Number" id="num"/>
+                </div>
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Temprature" id="temp"/>
+                </div>
+            </div>
+          </div>
+
+    </div>
+  </div>
+</form>
+
+
+	</div>
+
+</body>
