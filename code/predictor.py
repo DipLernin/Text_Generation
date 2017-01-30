@@ -16,7 +16,7 @@ print('Available models:')
 print(model_names)
 
 paths = [DATASETS_FOLDER+'/'+f.split('/')[-1].split('.')[0]+'.txt' for f in model_files]
-texts = [open(path).read().lower() for path in paths]
+texts = [open(path,encoding = "ISO-8859-1").read().lower() for path in paths]
 charss = [sorted(list(set(text))) for text in texts]
 char_indices = dict([(n,dict((c, i) for i, c in enumerate(chars))) for n,chars in zip(model_names, charss)])
 indices_char = dict([(n,dict((i, c) for i, c in enumerate(chars))) for n,chars in zip(model_names,charss)])
