@@ -5,8 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css">
-	<link href="http://v4-alpha.getbootstrap.com/examples/narrow-jumbotron/narrow-jumbotron.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <link href="http://v4-alpha.getbootstrap.com/examples/narrow-jumbotron/narrow-jumbotron.css" rel="stylesheet">
 	<script src="/Users/krishna/MOOC/Text_Generation/static/js/submit.js"></script>
 </head>
 <body>
@@ -32,28 +36,21 @@
       		<div class="form-group row">
       			<div class='col-md-4'>
             <select class="custom-select col-md-4" id="model">
-              <option selected value="poems.txt_v1">Poems</option>
+              <option selected value="poems.txt_gru_v1">Poems</option>
               <option value="Recipies">Recipies</option>
               <option value="Illiad">Illiad</option>
               <option value="Darwin">Darwin</option>
             </select>
       			</div>
 
-      			<div class='col-md-4'>
-              <div class="row">
-                <div class="col">
-      				  <input type="text" class="form-control" placeholder="Warm"/>
-                </div>
-                <div class="col">
-                <input type="text" class="form-control" placeholder="Num"/>
-                </div>
-            </div>
+      		<div class='col-md-4'>
+              
+  
      			</div>
 
       			<div class='col-md-4'>
               <div class="row">
                 <div class="col">
-                <input type="text" class="form-control" placeholder="Temp" id="temp"/>
                 </div>
                 <div class="col">
                 <button type="button" class="btn btn-success" id="btnsubmit">Submit</button>
@@ -62,12 +59,39 @@
       			</div>
       			
       		</div>
-      	</form>
+      	
 
+      <strong>Output:</strong>
 	  	<div class="jumbotron">
-        <span id="output"></span>
+
+        <span id="output">Please click on the Submit Button</span>
 		</div>
 
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Advance Options
+  </a>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-block">
+      <div class='col-md-12'>
+              <div class="row">
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Warm" id="warm"/>
+                </div>
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Char Count" id="char"/>
+                </div>
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Number" id="num"/>
+                </div>
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Temprature" id="temp"/>
+                </div>
+            </div>
+          </div>
+      
+    </div>
+  </div>
+</form>
 
 
 	</div>
