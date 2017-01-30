@@ -2,7 +2,10 @@ from flask import Flask
 from flask import request
 from flask.json import jsonify
 from predictor import predict
+from flask_cors import CORS, cross_origin
+
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/models/<model_name>/")
 def pred(model_name):
@@ -25,4 +28,4 @@ def pred(model_name):
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',port='8889')
+    app.run(port='8889')
