@@ -82,3 +82,76 @@ Epoch 1/1
 {'loss': [3.1149431244293742], 'val_loss': [3.322720031820106], 'val_acc': [0.12247517834049451], 'acc': [0.1422686610822079]}
 Iteration Number 15
 Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1243 - acc: 0.1394 - val_loss: 3.4969 - val_acc: 0.1525
+{'loss': [3.1242526462783857], 'val_loss': [3.496890210696999], 'val_acc': [0.15248866573289202], 'acc': [0.13937616288989818]}
+Iteration Number 16
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1265 - acc: 0.1383 - val_loss: 3.2357 - val_acc: 0.1518
+{'loss': [3.1265062416202372], 'val_loss': [3.2357043506253049], 'val_acc': [0.15175742211626075], 'acc': [0.13833210104267898]}
+Iteration Number 17
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1365 - acc: 0.1373 - val_loss: 3.4537 - val_acc: 0.0952
+{'loss': [3.1364883272389266], 'val_loss': [3.4537164467036869], 'val_acc': [0.095224166791446296], 'acc': [0.1373042891848798]}
+Iteration Number 18
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1372 - acc: 0.1359 - val_loss: 3.3082 - val_acc: 0.1214
+{'loss': [3.1372437415897885], 'val_loss': [3.3081949139871827], 'val_acc': [0.1214026877218817], 'acc': [0.13594335253588896]}
+Iteration Number 19
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1272 - acc: 0.1391 - val_loss: 3.2282 - val_acc: 0.0913
+{'loss': [3.1271744902648817], 'val_loss': [3.2281873672597676], 'val_acc': [0.091291701198946307], 'acc': [0.13908772557017152]}
+Iteration Number 20
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1287 - acc: 0.1390 - val_loss: 3.1866 - val_acc: 0.1115
+{'loss': [3.1286993690265299], 'val_loss': [3.1865529692241386], 'val_acc': [0.11147402459768403], 'acc': [0.13898616313370857]}
+Iteration Number 21
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1312 - acc: 0.1387 - val_loss: 3.2039 - val_acc: 0.1196
+{'loss': [3.1312293839559064], 'val_loss': [3.2039178932671404], 'val_acc': [0.11959895350891465], 'acc': [0.13874647578351318]}
+Iteration Number 22
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1475 - acc: 0.1352 - val_loss: 3.3752 - val_acc: 0.0939
+{'loss': [3.1474662761781524], 'val_loss': [3.3752141779544078], 'val_acc': [0.093940428024160513], 'acc': [0.13516335302302543]}
+Iteration Number 23
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1506 - acc: 0.1361 - val_loss: 3.2450 - val_acc: 0.1132
+{'loss': [3.1505656522308114], 'val_loss': [3.2449536148043023], 'val_acc': [0.11322900923696771], 'acc': [0.136126164921268]}
+Iteration Number 24
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1488 - acc: 0.1358 - val_loss: 3.3074 - val_acc: 0.1163
+{'loss': [3.1487562733617378], 'val_loss': [3.3074292053002661], 'val_acc': [0.11634898194471298], 'acc': [0.13578897763194953]}
+Iteration Number 25
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1494 - acc: 0.1363 - val_loss: 3.2354 - val_acc: 0.1236
+{'loss': [3.1493840432342752], 'val_loss': [3.2353928434067925], 'val_acc': [0.12361266838600375], 'acc': [0.1363374147891763]}
+Iteration Number 26
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1497 - acc: 0.1356 - val_loss: 3.3379 - val_acc: 0.1183
+{'loss': [3.1496841838325604], 'val_loss': [3.3378950334404611], 'val_acc': [0.11826646516976155], 'acc': [0.13559804025128538]}
+Iteration Number 27
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1509 - acc: 0.1351 - val_loss: 3.2221 - val_acc: 0.0975
+{'loss': [3.150928995766328], 'val_loss': [3.2221130931684834], 'val_acc': [0.097466647166716214], 'acc': [0.13506179058638088]}
+Iteration Number 28
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1508 - acc: 0.1355 - val_loss: 3.3181 - val_acc: 0.0889
+{'loss': [3.1507862736243797], 'val_loss': [3.318094183210452], 'val_acc': [0.08887047237416526], 'acc': [0.13545179034275212]}
+Iteration Number 29
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1535 - acc: 0.1350 - val_loss: 3.2686 - val_acc: 0.1132
+{'loss': [3.1534509039467959], 'val_loss': [3.2686350099944237], 'val_acc': [0.11316400982217838], 'acc': [0.13501710311443163]}
