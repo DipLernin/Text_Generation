@@ -2,14 +2,15 @@ import glob
 from keras.models import load_model
 import numpy as np
 import sys
+from phased_lstm_keras.PhasedLSTM import PhasedLSTM as PLSTM
 
-MODELS_FOLDER = 'trained_models'
+MODELS_FOLDER = 'trained_models2'
 DATASETS_FOLDER = 'datasets'
 
 print('Loading models...')
 model_files = glob.glob(MODELS_FOLDER + '/*.h5')
 model_names = ['.'.join(f.split('/')[-1].split('.')[:-1]) for f in model_files]
-models = dict([(n,load_model(f)) for n,f in zip(model_names,model_files)])
+models = dict([(n,load_model(f, {'PhasedLSTM':PLSTM})) for n,f in zip(model_names,model_files)])
 
 print('Available models:')
 print(model_names)
