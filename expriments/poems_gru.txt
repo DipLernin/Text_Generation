@@ -1,0 +1,84 @@
+ubuntu@ip-172-31-40-7:~/Text_Generation/code$ cat log_gru.txt
+Dataset: ../datasets/poems.txt
+corpus length: 923118
+total chars: 69
+nb sequences: 307693
+Vectorization...
+Build model...
+Iteration Number 1
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 126s - loss: 2.0206 - acc: 0.4054 - val_loss: 1.9534 - val_acc: 0.4136
+{'loss': [2.0205905763375553], 'val_loss': [1.9533537864437105], 'val_acc': [0.41355888136511521], 'acc': [0.4054453715967638]}
+Best model so far. Saving...
+Iteration Number 2
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 127s - loss: 1.8496 - acc: 0.4467 - val_loss: 1.8733 - val_acc: 0.4391
+{'loss': [1.8495901757384132], 'val_loss': [1.8733049845830707], 'val_acc': [0.4391199077226004], 'acc': [0.44665128334319004]}
+Best model so far. Saving...
+Iteration Number 3
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 127s - loss: 1.8109 - acc: 0.4574 - val_loss: 1.8950 - val_acc: 0.4417
+{'loss': [1.8108753433806901], 'val_loss': [1.8950475768107411], 'val_acc': [0.44170363509706723], 'acc': [0.45741283911794411]}
+Iteration Number 4
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 127s - loss: 1.7965 - acc: 0.4598 - val_loss: 1.8726 - val_acc: 0.4360
+{'loss': [1.7964830875350237], 'val_loss': [1.8725598065276123], 'val_acc': [0.4360161848608039], 'acc': [0.45978127513670303]}
+Best model so far. Saving...
+Iteration Number 5
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 126s - loss: 1.7784 - acc: 0.4653 - val_loss: 1.8557 - val_acc: 0.4527
+{'loss': [1.7784141324802474], 'val_loss': [1.8557002012078652], 'val_acc': [0.45265603928144926], 'acc': [0.46532252167439253]}
+Best model so far. Saving...
+Iteration Number 6
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 126s - loss: 1.7847 - acc: 0.4628 - val_loss: 1.8586 - val_acc: 0.4410
+{'loss': [1.7846633974039814], 'val_loss': [1.8585551615591531], 'val_acc': [0.44098864137118093], 'acc': [0.46277533576589941]}
+Iteration Number 7
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 1.7759 - acc: 0.4651 - val_loss: 1.8238 - val_acc: 0.4534
+{'loss': [1.7758516026570677], 'val_loss': [1.8238244905960579], 'val_acc': [0.45335478313450894], 'acc': [0.46511939680086128]}
+Best model so far. Saving...
+Iteration Number 8
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 1.7696 - acc: 0.4666 - val_loss: 1.8281 - val_acc: 0.4523
+{'loss': [1.7696031803334209], 'val_loss': [1.8280829694010388], 'val_acc': [0.45228229253672031], 'acc': [0.46656564589695559]}
+Iteration Number 9
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 1.7725 - acc: 0.4650 - val_loss: 1.9146 - val_acc: 0.4257
+{'loss': [1.7725484031418923], 'val_loss': [1.9146070432383242], 'val_acc': [0.42568127531208683], 'acc': [0.4649568969024237]}
+Iteration Number 10
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 2.2777 - acc: 0.3636 - val_loss: 3.0995 - val_acc: 0.1672
+{'loss': [2.2776571070813665], 'val_loss': [3.099470085255374], 'val_acc': [0.16716228732683802], 'acc': [0.36355696027696038]}
+Iteration Number 11
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 2.9986 - acc: 0.1759 - val_loss: 3.1299 - val_acc: 0.1311
+{'loss': [2.9986159508334285], 'val_loss': [3.1298601348325072], 'val_acc': [0.13105510327220496], 'acc': [0.17589801506386166]}
+Iteration Number 12
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.0718 - acc: 0.1551 - val_loss: 3.1140 - val_acc: 0.1380
+{'loss': [3.0717899839736496], 'val_loss': [3.113994999127458], 'val_acc': [0.13801004241043391], 'acc': [0.15510615305871486]}
+Iteration Number 13
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1059 - acc: 0.1454 - val_loss: 3.2156 - val_acc: 0.1476
+{'loss': [3.1058742352267013], 'val_loss': [3.2155643729428705], 'val_acc': [0.14758120865667565], 'acc': [0.14540490912241608]}
+Iteration Number 14
+Train on 246154 samples, validate on 61539 samples
+Epoch 1/1
+246154/246154 [==============================] - 125s - loss: 3.1149 - acc: 0.1423 - val_loss: 3.3227 - val_acc: 0.1225
+{'loss': [3.1149431244293742], 'val_loss': [3.322720031820106], 'val_acc': [0.12247517834049451], 'acc': [0.1422686610822079]}
+Iteration Number 15
+Train on 246154 samples, validate on 61539 samples
