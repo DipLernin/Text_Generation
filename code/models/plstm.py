@@ -1,3 +1,8 @@
+# To install plstm:
+# git clone https://github.com/fferroni/PhasedLSTM-Keras
+# cd PhasedLSTM-Keras
+# [sudo] python setup.py install
+
 from keras.models import Sequential
 from keras.layers import Dense, Activation
 from phased_lstm_keras.PhasedLSTM import PhasedLSTM as PLSTM
