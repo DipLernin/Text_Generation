@@ -55,7 +55,7 @@ filepath='../trained_models/' + DATASET + '_' + VERSION + '.h5'
 checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max')
 callbacks_list = [checkpoint]
 
-hist = model.fit(X, y, batch_size=128, nb_epoch=3, validation_split=0.2, callbacks=callbacks_list)
+hist = model.fit(X, y, batch_size=128, nb_epoch=30, validation_split=0.2, callbacks=callbacks_list)
 df = pd.DataFrame.from_dict(hist.history, orient='columns')
 filename = '../expriments/' + DATASET + '_' + VERSION + '.csv'
 df.to_csv(filename, sep=',', encoding='utf-8', index=False)
