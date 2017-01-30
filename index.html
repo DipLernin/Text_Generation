@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Smart Text</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css">
+	<link href="http://v4-alpha.getbootstrap.com/examples/narrow-jumbotron/narrow-jumbotron.css" rel="stylesheet">
+	<script src="/Users/krishna/MOOC/Text_Generation/static/js/submit.js"></script>
+</head>
+<body>
+
+	<p>
+	</p>
+	<div class="container">
+		<div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://diplernin.github.io/">About</a>
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Smart Text Demo</h3>
+      </div>
+
+      	<form>
+      		<div class="form-group row">
+      			<div class='col-md-4'>
+            <select class="custom-select col-md-4" id="model">
+              <option selected value="poems.txt_v1">Poems</option>
+              <option value="Recipies">Recipies</option>
+              <option value="Illiad">Illiad</option>
+              <option value="Darwin">Darwin</option>
+            </select>
+      			</div>
+
+      			<div class='col-md-4'>
+              <div class="row">
+                <div class="col">
+      				  <input type="text" class="form-control" placeholder="Warm"/>
+                </div>
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Num"/>
+                </div>
+            </div>
+     			</div>
+
+      			<div class='col-md-4'>
+              <div class="row">
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Temp" id="temp"/>
+                </div>
+                <div class="col">
+                <button type="button" class="btn btn-success" id="btnsubmit">Submit</button>
+                </div>
+            </div>
+      			</div>
+      			
+      		</div>
+      	</form>
+
+	  	<div class="jumbotron">
+        <span id="output"></span>
+		</div>
+
+
+
+	</div>
+
+</body>
