@@ -1,6 +1,7 @@
 $(function(){
 	$('#btnsubmit').click(function(){
         $('#btnsubmit').prop('disabled', true);
+        $("#output").html('loading...');
 		var model_name = $('#model').val();
         var warm_text = $('#warm').val();
         var count_char = $('#char').val();
