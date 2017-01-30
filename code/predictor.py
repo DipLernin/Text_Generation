@@ -4,7 +4,7 @@ import numpy as np
 import sys
 from phased_lstm_keras.PhasedLSTM import PhasedLSTM as PLSTM
 
-MODELS_FOLDER = 'trained_models2'
+MODELS_FOLDER = 'trained_models'
 DATASETS_FOLDER = 'datasets'
 
 print('Loading models...')
