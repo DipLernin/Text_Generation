@@ -1,5 +1,7 @@
 $(function(){
 	$('#btnsubmit').click(function(){
+        $('#btnsubmit').prop('disabled', true);
+        $("#output").html('loading...');
 		var model_name = $('#model').val();
         var warm_text = $('#warm').val();
         var count_char = $('#char').val();
@@ -12,7 +14,7 @@ $(function(){
         if (temp==='') temp='0.4';
 
         var port = '8889';
-        var server = 'localhost';
+        var server = '54.159.54.153';
 		var uri = 'http://'+ server + ':' + port + '/models/';
 		var params = model_name + '?' + 'num=' + number + '&cchar=' + count_char + '&temp=' + temp + '&warm=' + warm_text;
 		var url = uri + params;
@@ -20,9 +22,9 @@ $(function(){
 
 		$.getJSON( url, function( data ) {
 						data.result = data.result.replace(/\n/g, '<br>')
-
 						console.log(data.result)
-        		$("#output").html(data.result);
+        		        $("#output").html(data.result);
+                        $('#btnsubmit').prop('disabled', false);
     	});
 
 
