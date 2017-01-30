@@ -10,6 +10,7 @@ import numpy as np
 import random
 import sys
 import importlib
+import pandas as pd
 
 
 VERSION = sys.argv[1]
@@ -49,12 +50,12 @@ module = importlib.import_module(('.'.join(sys.argv[3].split('/'))))
 get_model = getattr(module, 'get_model')
 model = get_model(maxlen, len(chars))
 
-best_validation = float("inf")
-for iteration in range(1, 30):
-        print('Iteration Number', iteration)
-        hist = model.fit(X, y, batch_size=128, nb_epoch=1, validation_split=0.2)
-        print(hist.history)
-        if best_validation > hist.history['val_loss'][0]:
-            best_validation = hist.history['val_loss'][0]
-            print('Best model so far. Saving...')
-            model.save('../trained_models/' + DATASET + '_' + VERSION + '.h5')
+
+filepath='../trained_models/' + DATASET + '_' + VERSION + '.h5'
+checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max')
+callbacks_list = [checkpoint]
+
+hist = model.fit(X, y, batch_size=128, nb_epoch=3, validation_split=0.2, callbacks=callbacks_list)
+df = pd.DataFrame.from_dict(hist.history, orient='columns')
+filename = '../expriments/' + DATASET + '_' + VERSION + '.csv'
+df.to_csv(filename, sep=',', encoding='utf-8', index=False)
