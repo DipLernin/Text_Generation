@@ -1,5 +1,6 @@
 $(function(){
 	$('#btnsubmit').click(function(){
+        $('#btnsubmit').prop('disabled', true);
 		var model_name = $('#model').val();
         var warm_text = $('#warm').val();
         var count_char = $('#char').val();
@@ -20,9 +21,9 @@ $(function(){
 
 		$.getJSON( url, function( data ) {
 						data.result = data.result.replace(/\n/g, '<br>')
-
 						console.log(data.result)
-        		$("#output").html(data.result);
+        		        $("#output").html(data.result);
+                        $('#btnsubmit').prop('disabled', false);
     	});
 
 
