@@ -14,7 +14,7 @@ $(function(){
         if (temp==='') temp='0.4';
 
         var port = '8889';
-        var server = '54.159.54.153';
+        var server = '52.90.166.9';
 		var uri = 'http://'+ server + ':' + port + '/models/';
 		var params = model_name + '?' + 'num=' + number + '&cchar=' + count_char + '&temp=' + temp + '&warm=' + warm_text;
 		var url = uri + params;
